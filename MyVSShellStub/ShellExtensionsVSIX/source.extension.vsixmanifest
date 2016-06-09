@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+  <Metadata>
+    <Identity Id="58d83af4-8f4c-48c1-85fb-25bfc5717873" Version="1.0" Language="en-US" Publisher="My Company" />
+    <DisplayName>Shell VSIX manifest</DisplayName>
+    <Description>Core extensions for MyVSShellStub</Description>
+  </Metadata>
+  <Installation InstalledByMsi="true" SystemComponent="true">
+    <InstallationTarget Id="MyVSShellStub" Version="[1.0]" />
+  </Installation>
+  <Dependencies>
+    <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
+  </Dependencies>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="Project" d:ProjectName="MyVSShellStub.AboutBoxPackage" Path="|MyVSShellStub.AboutBoxPackage;PkgdefProjectOutputGroup|" />
+    <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="Project" d:ProjectName="FileComparer" Path="|FileComparer;PkgdefProjectOutputGroup|" />
+  </Assets>
+</PackageManifest>

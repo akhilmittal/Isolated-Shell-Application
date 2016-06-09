@@ -1,0 +1,177 @@
+﻿This file contains information that should be merged into the registry
+from a setup program, or copied into a .reg file and merged into the
+registry for your own personal testing. If you are using a Visual Studio
+Setup Project, then simply copy the file starting below the the "CUT HERE"
+line until the end, and save it to a file with the extension .reg. Then open 
+the Registry editor for your setup program, right click on the Registry editor 
+window, select Import and then browse to the .reg file you have created. All 
+the correct settings have been made and you do not need to make any further 
+modifications. To test these settings on your computer, save the contents of 
+this file to a .reg file like you would for a Setup project, but also search 
+for the value $RootFolder$ and replace it with the directory path containing 
+your program (using double backslashes "\\" as the delimiter). 
+After saving these changes, double-click on the .reg file and merge the changes
+into the registry.
+
+--------------------------------  CUT HERE  --------------------------------
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\CLSID\{196b1dff-6bff-4c17-9be1-ee273b5e226f}]
+@="MyVSShellStub DTE Object"
+
+[HKEY_CLASSES_ROOT\CLSID\{196b1dff-6bff-4c17-9be1-ee273b5e226f}\LocalServer32]
+@="$RootFolder$\\MyVSShellStub.exe"
+
+[HKEY_CLASSES_ROOT\CLSID\{196b1dff-6bff-4c17-9be1-ee273b5e226f}\ProgID]
+@="MyVSShellStub.DTE.1.0"
+
+[HKEY_CLASSES_ROOT\CLSID\{196b1dff-6bff-4c17-9be1-ee273b5e226f}\VersionIndependentProgID]
+@="MyVSShellStub.DTE"
+
+[HKEY_CLASSES_ROOT\CLSID\{196b1dff-6bff-4c17-9be1-ee273b5e226f}\Programmable]
+@=""
+
+[HKEY_CLASSES_ROOT\CLSID\{196b1dff-6bff-4c17-9be1-ee273b5e226f}\TypeLib]
+@="{80cc9f66-e7d8-4ddd-85b6-d9e6cd0e93e2}"
+
+[HKEY_CLASSES_ROOT\CLSID\{196b1dff-6bff-4c17-9be1-ee273b5e226f}\DefaultIcon]
+@="$RootFolder$\\MyVSShellStub.exe,1200"
+
+[HKEY_CLASSES_ROOT\CLSID\{196b1dff-6bff-4c17-9be1-ee273b5e226f}\Version]
+@="1.0"
+
+[HKEY_CLASSES_ROOT\CLSID\{99183747-de07-4a3e-8c72-f4efdd209c12}]
+@="MyVSShellStub Solution Object"
+
+[HKEY_CLASSES_ROOT\CLSID\{99183747-de07-4a3e-8c72-f4efdd209c12}\LocalServer32]
+@="$RootFolder$\\MyVSShellStub.exe"
+
+[HKEY_CLASSES_ROOT\CLSID\{99183747-de07-4a3e-8c72-f4efdd209c12}\ProgID]
+@="MyVSShellStub.Solution.1.0"
+
+[HKEY_CLASSES_ROOT\CLSID\{99183747-de07-4a3e-8c72-f4efdd209c12}\VersionIndependentProgID]
+@="MyVSShellStub.Solution"
+
+[HKEY_CLASSES_ROOT\CLSID\{99183747-de07-4a3e-8c72-f4efdd209c12}\Programmable]
+@=""
+
+[HKEY_CLASSES_ROOT\CLSID\{99183747-de07-4a3e-8c72-f4efdd209c12}\TypeLib]
+@="{80cc9f66-e7d8-4ddd-85b6-d9e6cd0e93e2}"
+
+[HKEY_CLASSES_ROOT\CLSID\{99183747-de07-4a3e-8c72-f4efdd209c12}\DefaultIcon]
+@="$RootFolder$\\MyVSShellStub.exe,1200"
+
+[HKEY_CLASSES_ROOT\CLSID\{99183747-de07-4a3e-8c72-f4efdd209c12}\Version]
+@="1.0"
+
+[HKEY_CLASSES_ROOT\MyVSShellStub.DTE.1.0]
+@="MyVSShellStub DTE Object"
+
+[HKEY_CLASSES_ROOT\MyVSShellStub.DTE.1.0\CLSID]
+@="{196b1dff-6bff-4c17-9be1-ee273b5e226f}"
+
+[HKEY_CLASSES_ROOT\MyVSShellStub.Solution.1.0]
+@="MyVSShellStub Solution Object"
+
+[HKEY_CLASSES_ROOT\MyVSShellStub.Solution.1.0\CLSID]
+@="{99183747-de07-4a3e-8c72-f4efdd209c12}"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\AppEnv\14.0\Apps\MyVSShellStub_1.0]
+"StubExePath"="$RootFolder$\\MyVSShellStub.exe"
+"AppName"="MyVSShellStub"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\MyVSShellStub.exe]
+@="$RootFolder$\\MyVSShellStub.exe"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\MAIN\FeatureControl\FEATURE_ENABLE_SCRIPT_PASTE_URLACTION_IF_PROMPT]
+"MyVSShellStub.exe"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\MAIN\FeatureControl\FEATURE_LOCALMACHINE_LOCKDOWN]
+"MyVSShellStub.exe"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\MAIN\FeatureControl\FEATURE_RESTRICT_ABOUT_PROTOCOL_IE7]
+"MyVSShellStub.exe"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\MAIN\FeatureControl\FEATURE_BLOCK_CROSS_PROTOCOL_FILE_NAVIGATION]
+"MyVSShellStub.exe"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\MAIN\FeatureControl\FEATURE_IFRAME_MAILTO_THRESHOLD]
+"MyVSShellStub.exe"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\MAIN\FeatureControl\FEATURE_SCRIPTURL_MITIGATION]
+"MyVSShellStub.exe"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\MAIN\FeatureControl\FEATURE_SHOW_APP_PROTOCOL_WARN_DIALOG]
+"MyVSShellStub.exe"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\MAIN\FeatureControl\FEATURE_VIEWLINKEDWEBOC_IS_UNSAFE]
+"MyVSShellStub.exe"=dword:00000001
+
+; Uncomment the entries below if you want to register a source file extension to work with Dynamic Data Exchange (DDE)
+
+;[HKEY_CLASSES_ROOT\Applications\MyVSShellStub.exe]
+
+;[HKEY_CLASSES_ROOT\Applications\MyVSShellStub.exe\shell]
+
+;[HKEY_CLASSES_ROOT\Applications\MyVSShellStub.exe\shell\Open]
+
+;[HKEY_CLASSES_ROOT\Applications\MyVSShellStub.exe\shell\Open\ddeexec]
+;@="Open(\"%1\")"
+
+;[HKEY_CLASSES_ROOT\Applications\MyVSShellStub.exe\shell\Open\ddeexec\Application]
+;@="MyVSShellStub.1.0"
+
+;[HKEY_CLASSES_ROOT\Applications\MyVSShellStub.exe\shell\Open\ddeexec\Topic]
+;@="system"
+
+;[HKEY_CLASSES_ROOT\Applications\MyVSShellStub.exe\shell\edit]
+
+;[HKEY_CLASSES_ROOT\Applications\MyVSShellStub.exe\shell\edit\Command]
+;@="\"$RootFolder$\\MyVSShellStub.exe\" /dde"
+
+;[HKEY_CLASSES_ROOT\Applications\MyVSShellStub.exe\shell\edit\ddeexec]
+;@="Open(\"%1\")"
+
+;[HKEY_CLASSES_ROOT\Applications\MyVSShellStub.exe\shell\edit\ddeexec\Application]
+;@="MyVSShellStub.1.0"
+
+;[HKEY_CLASSES_ROOT\Applications\MyVSShellStub.exe\shell\edit\ddeexec\Topic]
+;@="system"
+
+;[HKEY_CLASSES_ROOT\.MyVSShellStub_ext]
+;@="MyVSShellStub.MyVSShellStub_ext.1.0"
+
+;[HKEY_CLASSES_ROOT\MyVSShellStub.MyVSShellStub_ext.1.0]
+;"AlwaysShowExt"="1"
+;@="MyVSShellStub Source file"
+
+;[HKEY_CLASSES_ROOT\MyVSShellStub.MyVSShellStub_ext.1.0\DefaultIcon]
+;@="$RootFolder$\\MyVSShellStub.exe,1200"
+
+;[HKEY_CLASSES_ROOT\MyVSShellStub.MyVSShellStub_ext.1.0\shell]
+
+;[HKEY_CLASSES_ROOT\MyVSShellStub.MyVSShellStub_ext.1.0\shell\Open]
+
+;[HKEY_CLASSES_ROOT\MyVSShellStub.MyVSShellStub_ext.1.0\shell\Open\Command]
+;@="\"$RootFolder$\\MyVSShellStub.exe\" /dde"
+
+;[HKEY_CLASSES_ROOT\MyVSShellStub.MyVSShellStub_ext.1.0\shell\Open\ddeexec]
+;@="Open(\"%1\")"
+
+;[HKEY_CLASSES_ROOT\MyVSShellStub.MyVSShellStub_ext.1.0\shell\Open\ddeexec\Application]
+;@="MyVSShellStub.1.0"
+
+;[HKEY_CLASSES_ROOT\MyVSShellStub.MyVSShellStub_ext.1.0\shell\Open\ddeexec\Topic]
+;@="system"
+
+; Uncomment the entries below if you want to register your program for participation in Set Default Programs
+; for the file extension defined above.
+
+;[HKEY_LOCAL_MACHINE\SOFTWARE\RegisteredApplications]
+;"MyVSShellStub.1.0"="SOFTWARE\\Microsoft\\MyVSShellStub\\1.0\\Capabilities"
+
+;[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MyVSShellStub\1.0\Capabilities]
+;"ApplicationDescription"="Description of MyVSShellStub"
+
+;[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MyVSShellStub\1.0\Capabilities\FileAssociations]
+;".MyVSShellStub_ext"="MyVSShellStub.MyVSShellStub_ext.1.0"

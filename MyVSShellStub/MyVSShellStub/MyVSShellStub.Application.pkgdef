@@ -1,0 +1,94 @@
+﻿[$RootKey$]
+"InstallDir"="$RootFolder$"
+"ShellFolder"="$ShellFolder$"
+"ThisVersionDTECLSID"="{196b1dff-6bff-4c17-9be1-ee273b5e226f}"
+"ThisVersionSolutionCLSID"="{99183747-de07-4a3e-8c72-f4efdd209c12}"
+"SplashScreenBitmap"="$RootFolder$\Splash.bmp"
+"AppName"="Magic Gallery"
+"AppIcon"="$RootFolder$\ApplicationIcon.ico"
+"ProductVersion"="1.0"
+"CommandLineLogo"="Magic's Image Gallery Version 1.0"
+"UserFilesSubFolderName"="MyVSShellStub"
+"NewProjDlgSlnTreeNodeTitle"="MyVSShellStub Solution"
+"NewProjDlgInstalledTemplatesHdr"="MyVSShellStub installed templates"
+"HideMiscellaneousFilesByDefault"=dword:00000000
+"AddinsAllowed"=dword:00000001
+"DisableOutputWindow"=dword:00000000
+"AllowsDroppedFilesOnMainWindow"=dword:00000001
+"DefaultSearchPage"="http://www.google.com"
+"DefaultHomePage"="http://www.magicsw.com"
+"HideSolutionConcept"=dword:00000000
+"DefaultDebugEngine"="{00000000-0000-0000-0000-000000000000}"
+"UserOptsFileExt"="MyVSShellStub_suo"
+"SolutionFileExt"="MyVSShellStub_sln"
+"DefaultUserFilesFolderRoot"="MyVSShellStub"
+"SolutionFileCreatorIdentifier"="MyVSShellStub Solution File, Format Version 11.00"
+"DefaultProjectsLocation"="$MyDocuments$\MyVSShellStub"
+"AppLocalizationPackage"="{e5b6427f-dde9-457f-9749-b020dcc62672}"
+"DDEApplication"="MyVSShellStub.1.0"
+// set ShowHierarchyRootInTitle to dword:00000000 to omit the project name from the main window title
+"ShowHierarchyRootInTitle"=dword:00000001
+
+// Auto recovery is disable by default. Uncomment the following to enable auto recovery feature.
+//"UseAutoRecovery"=dword:00000001
+
+// Startpage is disabled by default. Uncomment the following to enable start page feature.
+// Please note one need to also specify a Start Page "Uri" under "[$RootKey$\StartPage\Default]" and
+// comment out No_ShellPkg_StartPageCommand in the UI project's vsct file.
+//"DisableStartPage"=dword:00000000
+
+// Samples in the New Project Dialog are disabled by default. Uncomment the following to 
+// enable the samples feature in the New Project Dialog.
+//"EnableSamples"=dword:00000001
+
+// Support for Microsoft supplied extension galleries is disabled by default. Uncomment the following to 
+// enable Microsoft-supplied extension galleries in the Extension Manager dialog.
+//"EnableMicrosoftGalleries"=dword:00000001
+
+// Support for end-user customization of extension galleries is disabled by default.
+// Uncomment the following to enable end-user customization of extension galleries
+// that appear in the Extension Manager dialog.
+//"EnablePrivateGalleries"=dword:00000001
+
+// If you enable a Start Page, specify the Uri of the loose or compiled Start Page XAML file.
+//[$RootKey$\StartPage\Default]
+//"Uri"="$RootFolder$\StartPage.xaml"
+
+//If you have a directory containing assemblies that need to be loaded, but not added
+//  to the probing path of the .config file, then you can add those here. Simply uncomment
+//  then add your directories to this key, and the AppDomain manager will look for your
+//  assemblies under the paths given.
+//[$RootKey$\BindingPaths\{e5b6427f-dde9-457f-9749-b020dcc62672}]
+//"$RootFolder$"=""
+//"C:\Directory1"=""
+//"C:\Directory2"=""
+
+[$RootKey$\Menus]
+"{e5b6427f-dde9-457f-9749-b020dcc62672}"=", 1000, 1"
+
+[$RootKey$\Profile]
+"DefaultVsProfile"="$RootFolder$\Profiles\General.vssettings"
+
+[$RootKey$\Packages\{e5b6427f-dde9-457f-9749-b020dcc62672}]
+"Inprocserver32"="$RootFolder$\MyVSShellStub.exe"
+
+[$RootKey$\Packages\{e5b6427f-dde9-457f-9749-b020dcc62672}\SatelliteDll]
+"DllName"="MyVSShellStubui.dll"
+"Path"="$RootFolder$"
+
+// Create local VS template location
+[$RootKey$\VSTemplate\Item]
+"UserFolder"="$RootFolder$\ItemTemplates"
+"CacheFolder"="$RootFolder$\ItemTemplatesCache"
+
+[$RootKey$\VSTemplate\Project]
+"UserFolder"="$RootFolder$\ProjectTemplates"
+"CacheFolder"="$RootFolder$\ProjectTemplatesCache"
+
+// Disable the online template tab and the framework dropdown in the new project and item dialog.
+[$RootKey$\NewProjectDialog]
+"DisableOnlineTemplates"=dword:00000001
+"HideFrameworkSelection"=dword:00000001
+
+
+
