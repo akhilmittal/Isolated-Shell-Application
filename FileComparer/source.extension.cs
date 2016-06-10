@@ -11,7 +11,7 @@ namespace FileComparer
         public const string Name = "File Comparer";
         public const string Description = "Extension to compare two files in Solution Explorer.";
         public const string Language = "en-US";
-        public const string Version = "1.0";
+        public const string Version = "1.0.1";
         public const string Author = "Akhil Mittal";
         public const string Tags = "compare, difference, files, diff, map";
     }
