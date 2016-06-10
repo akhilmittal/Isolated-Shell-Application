@@ -5,6 +5,7 @@
     <DisplayName>File Comparer</DisplayName>
     <Description xml:space="preserve">Extension to compare two files in Solution Explorer.</Description>
     <License>Resources\LICENSE</License>
+    <ReleaseNotes>https://github.com/akhilmittal/Isolated-Shell-Application/blob/master/CHANGELOG.md</ReleaseNotes>
     <Icon>Resources\compare_icon.png</Icon>
     <PreviewImage>Resources\compare_preview.png</PreviewImage>
     <Tags>compare, difference, files, diff, map</Tags>

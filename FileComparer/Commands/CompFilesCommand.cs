@@ -13,6 +13,8 @@ using System.Collections.Generic;
 using EnvDTE80;
 using System.Linq;
 using EnvDTE;
+using System.Windows.Forms;
+using System.IO;
 
 namespace FileComparer
 {
@@ -130,6 +132,13 @@ namespace FileComparer
             var files = FetchSelectedFiles(dte);
             file1 = files.ElementAtOrDefault(0);
             file2 = files.ElementAtOrDefault(1);
+            if (files.Count() == 1)
+            {
+                var fileDialog = new OpenFileDialog();
+                fileDialog.InitialDirectory = Path.GetDirectoryName(file1);
+                fileDialog.ShowDialog();
+                file2 = fileDialog.FileName;
+            }
             return !String.IsNullOrEmpty(file1) && !String.IsNullOrEmpty(file2);
 
         }

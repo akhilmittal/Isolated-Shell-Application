@@ -4,17 +4,9 @@
 // </copyright>
 //------------------------------------------------------------------------------
 
-using System;
-using System.ComponentModel.Design;
-using System.Diagnostics;
-using System.Diagnostics.CodeAnalysis;
-using System.Globalization;
-using System.Runtime.InteropServices;
-using Microsoft.VisualStudio;
-using Microsoft.VisualStudio.OLE.Interop;
 using Microsoft.VisualStudio.Shell;
-using Microsoft.VisualStudio.Shell.Interop;
-using Microsoft.Win32;
+using System;
+using System.Runtime.InteropServices;
 
 namespace FileComparer
 {
@@ -36,28 +28,11 @@ namespace FileComparer
     /// </para>
     /// </remarks>
     [PackageRegistration(UseManagedResourcesOnly = true)]
-    [InstalledProductRegistration("#110", "#112", "1.0", IconResourceID = 400)] // Info on this package for Help/About
+    [InstalledProductRegistration("#110", "#112", Vsix.Version, IconResourceID = 400)] // Info on this package for Help/About
     [ProvideMenuResource("Menus.ctmenu", 1)]
-    [Guid(CompFilesCommandPackage.PackageGuidString)]
-    [SuppressMessage("StyleCop.CSharp.DocumentationRules", "SA1650:ElementDocumentationMustBeSpelledCorrectly", Justification = "pkgdef, VS and vsixmanifest are valid VS terms")]
-    public sealed class CompFilesCommandPackage : Package
+    [Guid(PackageGuids.guidCompFilesCommandPackageString)]
+    public sealed class VSPackage : Package
     {
-        /// <summary>
-        /// CompFilesCommandPackage GUID string.
-        /// </summary>
-        public const string PackageGuidString = "19c1a8db-e8ea-4ae9-aa7c-bd7fa0e03d00";
-
-        /// <summary>
-        /// Initializes a new instance of the <see cref="CompFilesCommand"/> class.
-        /// </summary>
-        public CompFilesCommandPackage()
-        {
-            // Inside this method you can place any initialization code that does not require
-            // any Visual Studio service because at this point the package object is created but
-            // not sited yet inside Visual Studio environment. The place to do all the other
-            // initialization is the Initialize method.
-        }
-
         #region Package Members
 
         /// <summary>
