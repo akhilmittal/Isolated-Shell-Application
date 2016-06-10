@@ -1,7 +1,7 @@
 # File Comparer
 
-<!-- Replace this badge with your own-->
 [![Build status](https://ci.appveyor.com/api/projects/status/eri80x5w22aqu57s?svg=true)](https://ci.appveyor.com/project/akhilmittal/isolated-shell-application)
+
 
 <!-- Update the VS Gallery link after you upload the VSIX-->
 Download this extension from the [VS Gallery](https://visualstudiogallery.msdn.microsoft.com/[GuidFromGallery])
