@@ -68,7 +68,7 @@
             bitmap strip containing the bitmaps and then there are the numeric ids of the elements used
             inside a button definition. An important aspect of this declaration is that the element id
             must be the actual index (1-based) of the bitmap inside the bitmap strip. -->
-      <Bitmap guid="guidImages" href="Resources\compare.png" usedList="bmpPic1"/>
+      <Bitmap guid="guidImages" href="Resources\compare_icon.png" usedList="bmpPic1"/>
     </Bitmaps>
   </Commands>
 
@@ -84,7 +84,6 @@
 
     <GuidSymbol name="guidImages" value="{fdf71639-4749-4357-8fe7-9881b6f9542d}" >
       <IDSymbol name="bmpPic1" value="1" />
-    
     </GuidSymbol>
   </Symbols>
 </CommandTable>

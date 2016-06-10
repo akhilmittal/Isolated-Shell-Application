@@ -4,7 +4,9 @@
     <Identity Id="5f64001b-614e-424d-b84a-f462ce628238" Version="1.0" Language="en-US" Publisher="Akhil Mittal" />
     <DisplayName>File Comparer</DisplayName>
     <Description xml:space="preserve">Extension to compare two files in Solution Explorer.</Description>
-    <Icon>Resources\compare.ico</Icon>
+    <License>Resources\LICENSE</License>
+    <Icon>Resources\compare_icon.png</Icon>
+    <PreviewImage>Resources\compare_preview.png</PreviewImage>
     <Tags>compare, difference, files, diff, map</Tags>
   </Metadata>
   <Installation>

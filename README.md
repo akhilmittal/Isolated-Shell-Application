@@ -1,4 +1,4 @@
-# Shell VSIX manifest
+# File Comparer
 
 <!-- Replace this badge with your own-->
 [![Build status](https://ci.appveyor.com/api/projects/status/eri80x5w22aqu57s?svg=true)](https://ci.appveyor.com/project/akhilmittal/isolated-shell-application)
@@ -9,24 +9,22 @@ or get the [CI build](http://vsixgallery.com/extension/58d83af4-8f4c-48c1-85fb-2
 
 ---------------------------------------
 
-Core extensions for MyVSShellStub
+Visual Studio Extension to compare two files in solution explorer.
 
 See the [changelog](CHANGELOG.md) for changes and roadmap.
 
 ## Features
 
-- Feature 1
-- Feature 2
-  - Sub feature
+- Compare two files in solution explorer.
 
-### Feature 1
-Describe feature 1. Add screenshots/code samples etc.
+### Compare two files
+Select two files in solution explorer and right click to get Compare Files... option to compare the selected files.
 
-### Feature 2
-Describe feature 2. Add screenshots/code samples etc.
+![File](snaps/file.png)
 
-#### Sub feature
-Describe sub feature. Add screenshots/code samples etc.
+When Compare Files... option selected, both the files will be opened in left panel and show the difference.
+
+![File Diff](snaps/file_diff.png)
 
 ## Contribute
 Check out the [contribution guidelines](CONTRIBUTING.md)
